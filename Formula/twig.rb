@@ -5,7 +5,7 @@
 class Twig < Formula
   desc "TUI to manage git worktrees and tmux sessions"
   homepage "https://github.com/Alex-Painter/twig"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on "gh" => :optional
@@ -14,16 +14,16 @@ class Twig < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Alex-Painter/twig/releases/download/v0.1.0/twig_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d1fa4dd45b563dae41002144f46040e6d1f54cdbf12a8bb8ae46c7813f9edbe6"
+      url "https://github.com/Alex-Painter/twig/releases/download/v0.2.0/twig_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f27e0d2f8afd621b1a10c2623527f3db377a5f5a8985d28cad7185d6a1a7d9c9"
 
       define_method(:install) do
         bin.install "twig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Alex-Painter/twig/releases/download/v0.1.0/twig_0.1.0_darwin_arm64.tar.gz"
-      sha256 "421be013929ab6bec43a31385034e3c2899498e7e6296eb8bf08454920e946d0"
+      url "https://github.com/Alex-Painter/twig/releases/download/v0.2.0/twig_0.2.0_darwin_arm64.tar.gz"
+      sha256 "7b50dbd3aaf6b29457a1a125bbfb8c78d3ebdb71c00341131d0992fcba53ab52"
 
       define_method(:install) do
         bin.install "twig"
@@ -33,15 +33,15 @@ class Twig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Alex-Painter/twig/releases/download/v0.1.0/twig_0.1.0_linux_amd64.tar.gz"
-      sha256 "517385284897924de1c401457e7e499754fe36eac91c6f3dc860972068025cbe"
+      url "https://github.com/Alex-Painter/twig/releases/download/v0.2.0/twig_0.2.0_linux_amd64.tar.gz"
+      sha256 "d54ff2193eb568bd90d36f19810b952aeb71938ef1a5394b519257bce05daada"
       define_method(:install) do
         bin.install "twig"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Alex-Painter/twig/releases/download/v0.1.0/twig_0.1.0_linux_arm64.tar.gz"
-      sha256 "4fe817708f0f617000540769c80bd6f983e0ba67b774c16ffc9213bf574ff636"
+      url "https://github.com/Alex-Painter/twig/releases/download/v0.2.0/twig_0.2.0_linux_arm64.tar.gz"
+      sha256 "aafd7533ff4cd1dfdda212b812cb7c1902b0551bfb35f9ffcaadb1a7c335c57a"
       define_method(:install) do
         bin.install "twig"
       end
